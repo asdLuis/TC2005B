@@ -1,0 +1,12 @@
+* {
+    background: url('images/images.jpg') no-repeat center center fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info, section, .ref {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
