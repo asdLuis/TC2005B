@@ -1,3 +1,5 @@
+// Ejercicio 1
+
 function askForNumber() {
     let number = prompt("Please enter a number", 1);
     number++;
@@ -31,7 +33,9 @@ function askForNumber() {
     tbl.appendChild(tblBody);
     document.body.appendChild(tbl);
     tbl.setAttribute("border", "2");
-}
+};
+
+// Ejercicio 2
 
 function calculateNum() {
 
@@ -49,4 +53,61 @@ function calculateNum() {
     } else {
         alert("Incorrect. The correct answer is " + result);
     }
+};
+
+// Ejercicio 3
+
+function contador(arr) {
+
+    let pos = 0;
+    let neg = 0;
+    let zero = 0;
+
+    arr.forEach(element => {
+        if (element > 0) {
+            pos++;
+        }
+        if (element < 0) {
+            neg++;
+        }
+        if (element == 0) {
+            zero++;
+        }
+    });
+
+    return 'Positivos: ' + pos + ' Negativos: ' + neg + ' Ceros: ' + zero;
+};
+
+// Ejercicio 4
+
+function matrixAvg(matrix) {
+
+    let average = 0;
+    let size = 0;
+
+    matrix.forEach(row => {
+        row.forEach(element => {
+            average += element;
+            size++;
+        });
+    });
+
+    return average/size;
+
+};
+
+// Ejercicio 5
+
+function reverseNum(n) {
+
+    return [...(n).toString()].reverse().join(''); 
 }
+
+// Ejercicio 6
+
+function recurFibo(n) {
+        if (n <= 1) {
+            return n;
+        }
+        return recurFibo(n - 1) + recurFibo(n - 2);
+};
