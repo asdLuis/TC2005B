@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autism Test</title>
+    <!-- Link to Bulma CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Autism Test</h1>
+            <form action="result.html" method="GET">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Enter your name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" name="email" placeholder="Enter your email to send your results">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Do you like skibidi toilet?</label>
+                    <div class="control">
+                        <label class="radio">
+                            <input type="radio" name="answer" value="yes" />
+                            Yes, it is my favorite
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="answer" value="no" />
+                            No, I don't like it
+                        </label>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button type="submit" class="button is-primary">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
