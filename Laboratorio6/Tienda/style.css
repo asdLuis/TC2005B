@@ -23,7 +23,7 @@ h1 {
 }
 
 .product {
-    width: 300px; /* Fixed width for product boxes */
+    width: 300px;
     text-align: center;
     margin: 20px;
     padding: 20px;
@@ -38,10 +38,6 @@ h1 {
     margin-bottom: 10px;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
-}
-
-.image:hover {
-    transform: scale(1.1);
 }
 
 .quantity-input {

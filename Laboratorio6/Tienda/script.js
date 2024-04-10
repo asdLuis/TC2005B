@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const priceGamer3 = 40000;
 
     const quantityInputs = document.querySelectorAll('.quantity-input');
+    const imageContainers = document.querySelectorAll('.product');
 
     function updateTotalPrice() {
         let totalPrice = 0;
@@ -32,5 +33,17 @@ document.addEventListener("DOMContentLoaded", function() {
         input.addEventListener('input', updateTotalPrice);
     });
 
+    imageContainers.forEach(function(container) {
+        const image = container.querySelector('.image');
+        image.addEventListener('mouseenter', function() {
+            image.style.transform = 'scale(1.1)';
+        });
+
+        image.addEventListener('mouseleave', function() {
+            image.style.transform = 'scale(1)';
+        });
+    });
+
     updateTotalPrice();
 });
+
