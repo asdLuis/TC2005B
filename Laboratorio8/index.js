@@ -1,0 +1,28 @@
+const http = require('http');   
+const server = http.createServer( (request, response) => {    
+    console.log(request.url);
+    response.setHeader('Content-Type', 'text/html');
+    response.write(`
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=, initial-scale=1.0">
+            <title>Pregunta</title>
+        </head>
+        <body>
+            <form action="form.html">
+                <h3>Describe Material design</h3>
+                <p>Lenguaje desarrollado por Google en 2014, cuyo objetivo es tener un nuevo lenguaje visual que combine los principios del buen diseño con la innovación técnica y científica. El material tiene superficies y bordes físicos. Las costuras y las sombras brindan significado sobre lo que puedes tocar". Google afirma que su nuevo lenguaje de diseño se basa en papel y tinta, pero la implementación se lleva a cabo de manera avanzada.</p>
+        
+                <p>Material Palette es un sitio web que permite generar y explorar paletas de colores basadas en Material Design de Google. Material Design es un conjunto de directrices de diseño que Google creó para garantizar una experiencia de usuario coherente en todos sus productos. </p>
+        
+                <button type="submit">Pasar a aplicación</button>
+            </form>
+        
+        </body>
+        </html>
+    `);
+    response.end();
+});
+server.listen(3030);
