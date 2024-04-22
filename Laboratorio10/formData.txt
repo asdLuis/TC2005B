@@ -1,2 +1,4 @@
 Name: asd, Answer: yes
 Name: Luis, Answer: no
+Name: Luis, Answer: no
+Name: Ricardo, Answer: yes
