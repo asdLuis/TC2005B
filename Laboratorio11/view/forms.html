@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" action="/forms/post-form">
+        <label>What is your name?</label>
+        <input type="text" name="name" placeholder="Enter your name">
+        <br>
+        <label>Do you play League of Legends?</label>
+        <div class="answers">
+            <label class="radio">
+                <input type="radio" name="answer" value="yes" />
+                Yes
+            </label>
+            <label class="radio">
+                <input type="radio" name="answer" value="no" />
+                No
+            </label>
+        </div>
+        <div class="control">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
