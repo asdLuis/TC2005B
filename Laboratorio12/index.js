@@ -30,6 +30,25 @@ app.get('/test_ejs', (request, response, next) => {
     });
 });
 
+app.get('/form', (request, response, next) => {
+    response.render('form');
+}); 
+
+app.post('/submit', (req, res) => {
+    const { password, confirmPassword } = req.body;
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+        res.send('Passwords do not match');
+    } else {
+        // Passwords match, handle further processing
+        res.send('Passwords match');
+    }
+});
+
+
+
+
 app.use((request, response, next) => {
     response.status(404);
     response.send('¡Page Not Found!'); 

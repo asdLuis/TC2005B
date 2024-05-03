@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <%- include('css.ejs') %>
+</head>
+<body>
+    <form method="POST" action="/submit">
+        <!-- Create password -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+            <br>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    
+    
+</body>
+<%- include('scripts.ejs') %>
+</html>
