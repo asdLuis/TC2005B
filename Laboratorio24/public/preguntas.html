@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas y Respuestas</title>
+</head>
+<body>
+    <h1>Preguntas y Respuestas sobre Desarrollo Web</h1>
+
+    <div class="pregunta">
+        <h2>¿Qué importancia tiene AJAX en el desarrollo de RIA's (Rich Internet Applications)?</h2>
+        <p>Respuesta:</p>
+        <p>AJAX es crucial en el desarrollo de RIA's porque permite que las aplicaciones web se comuniquen con el servidor en segundo plano sin necesidad de recargar toda la página. Esto significa que las aplicaciones pueden ser más rápidas y más dinámicas, proporcionando una mejor experiencia de usuario similar a las aplicaciones de escritorio.</p>
+    </div>
+
+    <div class="pregunta">
+        <h2>¿Qué implicaciones de seguridad tiene AJAX?</h2>
+        <p>Respuesta:</p>
+        <p>AJAX introduce algunas implicaciones importantes en términos de seguridad. Una de las principales preocupaciones es la exposición de puntos finales de API, que pueden estar sujetos a ataques de CSRF (Cross-Site Request Forgery) y XSS (Cross-Site Scripting). Además, como AJAX permite que las solicitudes se realicen sin recargar la página, los desarrolladores deben ser conscientes de posibles vulnerabilidades como las inyecciones de código SQL y los ataques de fuerza bruta.</p>
+    </div>
+
+    <div class="pregunta">
+        <h2>¿Dónde se deben hacer las validaciones de seguridad, del lado del cliente o del lado del servidor?</h2>
+        <p>Respuesta:</p>
+        <p>Las validaciones de seguridad deben realizarse en el lado del servidor. Esto se debe a que el lado del cliente es susceptible a manipulaciones por parte de los usuarios, por lo que cualquier validación realizada allí puede ser eludida fácilmente. Validar los datos en el lado del servidor garantiza una mayor seguridad y confiabilidad en la aplicación.</p>
+    </div>
+
+    <div class="pregunta">
+        <h2>¿Qué es JSON?</h2>
+        <p>Respuesta:</p>
+        <p>JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos que se utiliza comúnmente en el desarrollo web. Es legible para los humanos y fácil de entender para las máquinas. Se compone de pares clave-valor y arrays, y se utiliza principalmente para enviar datos entre un servidor y un navegador web como parte de una solicitud AJAX. JSON ha reemplazado en gran medida a XML en muchas aplicaciones debido a su simplicidad y eficiencia.</p>
+    </div>
+</body>
+</html>
